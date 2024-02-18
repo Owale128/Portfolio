@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#about img {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=main.css.map */
