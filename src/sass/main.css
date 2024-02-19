@@ -16,14 +16,8 @@
   font-size: 1.3rem;
 }
 
-.en-flag {
+.en-flag, .swe-flag {
   width: 2rem;
-  margin-left: 2rem;
-}
-
-.swe-flag {
-  width: 2rem;
-  margin-left: 3rem;
 }
 
 .dropdown-menu {
@@ -72,4 +66,8 @@ h5,
 .carousel-control-prev .carousel-item img,
 .carousel-control-next .carousel-item img {
   height: 22rem;
+}
+
+.none {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
