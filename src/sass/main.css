@@ -8,4 +8,11 @@
   width: 15rem;
   height: 15rem;
   margin-bottom: 2rem;
+}
+
+.portfolio-img {
+  max-width: 25rem;
+  border-radius: 2rem;
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */
