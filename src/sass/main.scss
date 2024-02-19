@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #about img {
@@ -22,6 +22,7 @@
   margin-left: 2rem;
 
 }
+
 .swe-flag {
   width: 2rem;
   margin-left: 3rem;
@@ -29,4 +30,22 @@
 
 .dropdown-menu {
   background-color: antiquewhite;
+}
+
+h2 {
+  text-shadow: 2px 2px 0 #ebb4b4, 3px 3px 0 #000;
+  transform: skew(-10deg);
+
+}
+
+h5,
+.projectDescription {
+  text-align: center;
+}
+
+.aboutMeText {
+  max-width: 35rem;
+  text-align: center;
+  margin-left: 6rem;
+
 }
