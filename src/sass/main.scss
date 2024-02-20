@@ -30,7 +30,7 @@ header {
 }
 
 h2 {
-  text-shadow: 2px 2px 0 #ebb4b4, 3px 3px 0 #000;
+  text-shadow: 0.125rem 0.125rem 0 #ebb4b4, 0.1875rem 0.1875rem 0 #000;
   transform: skew(-10deg);
 }
 
@@ -64,7 +64,6 @@ h5,
 .carousel-control-prev,
 .carousel-control-next {
   margin: 12rem;
-  
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -79,4 +78,8 @@ h5,
 
 .none {
   display: none;
+}
+
+.appPage:hover {
+  color: rgb(226, 65, 65);
 }
