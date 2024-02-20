@@ -4,34 +4,61 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes flyIn {
+  from {
+    top: -6.25rem;
+   
+  }
+
+  to {
+    top: 0;
+
+  }
+}
+
+.navbar {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
 header {
   margin-bottom: 5rem;
+  position: relative;
+  top: -6.25rem;
+  animation: flyIn 1s ease forwards;
+
 }
 
 .profileImg {
   width: 15rem;
   height: 15rem;
   margin-bottom: 2rem;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 .aboutMeText {
   max-width: 35rem;
   margin-left: 6rem;
   font-size: 1.3rem;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
-.en-flag,
-.swe-flag {
-  width: 2rem;
-}
-
-.dropdown-menu {
-  background-color: antiquewhite;
-}
 
 h2 {
   text-shadow: 0.125rem 0.125rem 0 #ebb4b4, 0.1875rem 0.1875rem 0 #000;
   transform: skew(-10deg);
+  animation: fadeIn 1s ease-in-out forwards;
+  font-size: 2.3rem;
 }
 
 h5,
@@ -48,18 +75,6 @@ h5,
 }
 
 
-.social-media {
-  margin-top: 10rem;
-
-  .social-icon {
-    width: 3rem;
-    transition: transform 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-}
 
 .carousel-control-prev,
 .carousel-control-next {
