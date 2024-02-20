@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 5rem;
+}
+
 .profileImg {
   width: 15rem;
   height: 15rem;
@@ -16,7 +20,8 @@
   font-size: 1.3rem;
 }
 
-.en-flag, .swe-flag {
+.en-flag,
+.swe-flag {
   width: 2rem;
 }
 
