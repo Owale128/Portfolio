@@ -35,6 +35,7 @@ export const getLanguage = (): string | null => {
 
 const activateSavedLanguage = () => {
   const savedLanguage = getLanguage();
+  console.log(saveLanguage)
   if (savedLanguage) {
 
     if (savedLanguage === 'en') {

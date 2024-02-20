@@ -14,7 +14,6 @@ body {
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease;
 }
-
 .description-container:hover {
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5);
 }
@@ -43,6 +42,9 @@ ul > li {
 
 a {
   font-size: 1.2rem;
+}
+a:hover {
+  color: rgb(45, 100, 45);
 }
 
 .dropdown {

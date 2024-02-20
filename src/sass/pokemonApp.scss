@@ -13,10 +13,10 @@ body {
     border-radius: 0.625rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3); 
     transition: box-shadow 0.3s ease;
-}
 
-.description-container:hover {
-    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5); 
+    &:hover {
+        box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5); 
+    }
 }
 
 p {
@@ -41,6 +41,9 @@ ul > li {
 
 a {
     font-size: 1.2rem;
+    &:hover {
+        color: rgb(45, 100, 45);
+    }
 }
 
 .dropdown {
