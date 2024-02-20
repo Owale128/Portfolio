@@ -4,9 +4,9 @@ const toggleLanguageSelect = document.getElementById('language-select') as HTMLS
 
   toggleLanguageSelect.addEventListener('change', () => {
     const selectedLanguage = toggleLanguageSelect.value;
-    saveLanguage(selectedLanguage);
     
-  
+    saveLanguage(selectedLanguage);
+
     if (selectedLanguage === 'en') {
       swedishElements.forEach(element => {
         element.classList.add('none');
@@ -25,18 +25,18 @@ const toggleLanguageSelect = document.getElementById('language-select') as HTMLS
   });
 
 
-const saveLanguage = (language: string) => {
+export const saveLanguage = (language: string) => {
   localStorage.setItem('language', language);
 }
 
-const getLanguage = (): string | null => {
+export const getLanguage = (): string | null => {
   return localStorage.getItem('language');
 }
 
 const activateSavedLanguage = () => {
   const savedLanguage = getLanguage();
   if (savedLanguage) {
-  
+
     if (savedLanguage === 'en') {
       swedishElements.forEach(element => {
         element.classList.add('none');
@@ -45,7 +45,7 @@ const activateSavedLanguage = () => {
         element.classList.remove('none');
       });
     } else {
-   
+     
       englishElements.forEach(element => {
         element.classList.add('none');
       });
@@ -59,4 +59,3 @@ const activateSavedLanguage = () => {
 window.onload = () => {
   activateSavedLanguage();
 };
-
