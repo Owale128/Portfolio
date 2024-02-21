@@ -1,5 +1,5 @@
 
-import { saveLanguage, getLanguage } from "./main";
+import { saveLanguage, getLanguage } from "./Functions/saveLanguage";
 
 const swedishElements = document.querySelectorAll('.swedish');
 const englishElements = document.querySelectorAll('.english');
