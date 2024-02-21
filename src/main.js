@@ -1,0 +1,51 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var saveLanguage_1 = require("./Functions/saveLanguage");
+var toggleLanguageSelect = document.getElementById('language-select');
+var swedishElements = document.querySelectorAll('.swedish');
+var englishElements = document.querySelectorAll('.english');
+toggleLanguageSelect.addEventListener('change', function () {
+    var selectedLanguage = toggleLanguageSelect.value;
+    (0, saveLanguage_1.saveLanguage)(selectedLanguage);
+    if (selectedLanguage === 'en') {
+        swedishElements.forEach(function (element) {
+            element.classList.add('none');
+        });
+        englishElements.forEach(function (element) {
+            element.classList.remove('none');
+        });
+    }
+    else {
+        englishElements.forEach(function (element) {
+            element.classList.add('none');
+        });
+        swedishElements.forEach(function (element) {
+            element.classList.remove('none');
+        });
+    }
+});
+var activateSavedLanguage = function () {
+    var savedLanguage = (0, saveLanguage_1.getLanguage)();
+    console.log(saveLanguage_1.saveLanguage);
+    if (savedLanguage) {
+        if (savedLanguage === 'en') {
+            swedishElements.forEach(function (element) {
+                element.classList.add('none');
+            });
+            englishElements.forEach(function (element) {
+                element.classList.remove('none');
+            });
+        }
+        else {
+            englishElements.forEach(function (element) {
+                element.classList.add('none');
+            });
+            swedishElements.forEach(function (element) {
+                element.classList.remove('none');
+            });
+        }
+    }
+};
+window.onload = function () {
+    activateSavedLanguage();
+};
