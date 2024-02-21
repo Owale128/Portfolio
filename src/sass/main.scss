@@ -1,30 +1,9 @@
+@use 'keyframes';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    
-  }
-  
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes flyIn {
-  from {
-    top: -6.25rem;
-    
-  }
-  
-  to {
-    top: 0;
-    
-  }
 }
 
 .navbar {

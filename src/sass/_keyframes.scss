@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flyIn {
+    from {
+      top: -6.25rem;
+      
+    }
+    
+    to {
+      top: 0;
+      
+    }
+  }
