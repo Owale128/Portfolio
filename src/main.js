@@ -51,3 +51,18 @@ var activateSavedLanguage = function () {
 window.onload = function () {
     activateSavedLanguage();
 };
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    navbarLinks.forEach(function(navbarLink) {
+      navbarLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        var targetId = navbarLink.getAttribute('href').substring(1);
+        var targetSection = document.getElementById(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  });
+  
