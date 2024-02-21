@@ -165,15 +165,19 @@ h5,
   .carousel-control-next {
     margin: -0.5rem;
   }
+  .skillsH2 {
+    margin-top: -2rem;
+  }
   .skills ul {
     gap: 0.4rem;
-    margin-top: 5rem;
+    margin-top: -1rem;
   }
   .skills li {
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4.9rem;
+    height: 4.9rem;
     font-size: 0.9rem;
-    line-height: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
   }
   .social-media .col-md-4 {
     flex: 1;
