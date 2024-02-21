@@ -8,12 +8,12 @@
 
 .navbar {
   animation: fadeIn 1s ease-in-out forwards;
-  
+
   .nav-item {
     font-size: 1.2rem;
-    
+
   }
-  
+
   .dropdownTxt {
     color: white;
     text-align: center;
@@ -88,8 +88,6 @@ h5,
   color: rgb(226, 65, 65);
 }
 
-
-
 .bg {
   margin-top: 8rem;
   background-color: rgba(255, 235, 205, 0.452);
@@ -136,4 +134,60 @@ h5,
       transform: scale(1.2);
     }
   }
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar-nav.ml-auto .nav-item.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+
+  .aboutMeText {
+
+    margin-left: 0.5rem;
+  }
+
+  .portfolio-img {
+    max-width: 18rem;
+    height: 19rem;
+  }
+
+  .projectDescription {
+    font-size: 1.5rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: -0.5rem;
+  }
+
+  .skills ul {
+    gap: 0.4rem;
+    margin-top: 5rem;
+  }
+
+  .skills li {
+    width: 4.4rem;
+    height: 4.4rem;
+    font-size: 0.9rem;
+    line-height: 4rem;
+  }
+
+  .social-media .col-md-4 {
+    flex: 1;
+  }
+
+    select.form-control option {
+    font-size: 0.9rem; /* Adjust the font size as needed */
+  }
+
 }
