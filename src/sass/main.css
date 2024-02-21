@@ -151,7 +151,8 @@ h5,
     margin: 1rem;
   }
   .aboutMeText {
-    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
   }
   .portfolio-img {
     max-width: 18rem;
@@ -178,6 +179,9 @@ h5,
     flex: 1;
   }
   select.form-control option {
-    font-size: 0.9rem; /* Adjust the font size as needed */
+    font-size: 0.9rem;
+  }
+  .none {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -152,8 +152,8 @@ h5,
   }
 
   .aboutMeText {
-
-    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
   }
 
   .portfolio-img {
@@ -187,7 +187,11 @@ h5,
   }
 
     select.form-control option {
-    font-size: 0.9rem; /* Adjust the font size as needed */
+    font-size: 0.9rem;
+  }
+
+  .none {
+    display: none; 
   }
 
 }

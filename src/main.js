@@ -1,12 +1,14 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var saveLanguage_1 = require("./Functions/saveLanguage");
+// Object.defineProperty(exports, "__esModule", { value: true });
+import { saveLanguage, getLanguage } from "../src/Functions/saveLanguage.js"; // Uppdatera 
+
 var toggleLanguageSelect = document.getElementById('language-select');
 var swedishElements = document.querySelectorAll('.swedish');
 var englishElements = document.querySelectorAll('.english');
+
 toggleLanguageSelect.addEventListener('change', function () {
     var selectedLanguage = toggleLanguageSelect.value;
-    (0, saveLanguage_1.saveLanguage)(selectedLanguage);
+    saveLanguage(selectedLanguage);
     if (selectedLanguage === 'en') {
         swedishElements.forEach(function (element) {
             element.classList.add('none');
@@ -14,8 +16,7 @@ toggleLanguageSelect.addEventListener('change', function () {
         englishElements.forEach(function (element) {
             element.classList.remove('none');
         });
-    }
-    else {
+    } else {
         englishElements.forEach(function (element) {
             element.classList.add('none');
         });
@@ -24,9 +25,10 @@ toggleLanguageSelect.addEventListener('change', function () {
         });
     }
 });
+
 var activateSavedLanguage = function () {
-    var savedLanguage = (0, saveLanguage_1.getLanguage)();
-    console.log(saveLanguage_1.saveLanguage);
+    var savedLanguage = getLanguage(); 
+    console.log(savedLanguage);
     if (savedLanguage) {
         if (savedLanguage === 'en') {
             swedishElements.forEach(function (element) {
@@ -35,8 +37,7 @@ var activateSavedLanguage = function () {
             englishElements.forEach(function (element) {
                 element.classList.remove('none');
             });
-        }
-        else {
+        } else {
             englishElements.forEach(function (element) {
                 element.classList.add('none');
             });
@@ -46,6 +47,7 @@ var activateSavedLanguage = function () {
         }
     }
 };
+
 window.onload = function () {
     activateSavedLanguage();
 };
