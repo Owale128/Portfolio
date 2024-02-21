@@ -49,4 +49,16 @@ a:hover {
 
 .dropdown {
   list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .description-container {
+    max-width: 100vw;
+  }
+  ul {
+    margin-left: -1.5rem;
+  }
 }/*# sourceMappingURL=todoApp.css.map */
