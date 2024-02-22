@@ -1,6 +1,6 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-import { saveLanguage, getLanguage } from "../src/Functions/saveLanguage.js";
+import { saveLanguage, getLanguage } from "./src/Functions/saveLanguage.js";
 
 var toggleLanguageSelect = document.getElementById('language-select');
 var swedishElements = document.querySelectorAll('.swedish');
@@ -27,7 +27,7 @@ toggleLanguageSelect.addEventListener('change', function () {
 });
 
 var activateSavedLanguage = function () {
-    var savedLanguage = getLanguage(); 
+    var savedLanguage = getLanguage();
     console.log(savedLanguage);
     if (savedLanguage) {
         if (savedLanguage === 'en') {
@@ -53,16 +53,15 @@ window.onload = function () {
 };
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    
-    navbarLinks.forEach(function(navbarLink) {
-      navbarLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        var targetId = navbarLink.getAttribute('href').substring(1);
-        var targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      });
+
+    navbarLinks.forEach(function (navbarLink) {
+        navbarLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            var targetId = navbarLink.getAttribute('href').substring(1);
+            var targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
     });
-  });
-  
+});
