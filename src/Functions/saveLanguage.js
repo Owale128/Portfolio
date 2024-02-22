@@ -1,7 +1,6 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-// const _getLanguage = exports.saveLanguage = void 0;
-export { _getLanguage as getLanguage };
+// exports.getLanguage = exports.saveLanguage = void 0;
 var saveLanguage = function (language) {
     localStorage.setItem('language', language);
 };
@@ -11,4 +10,4 @@ var getLanguage = function () {
     return localStorage.getItem('language');
 };
 const _getLanguage = getLanguage;
-// export { _getLanguage as getLanguage };
+export { _getLanguage as getLanguage };
