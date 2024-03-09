@@ -20,12 +20,11 @@
   }
 }
 
-header {
+.header {
   margin-bottom: 5rem;
   position: relative;
-  top: -6.25rem;
+  margin-top: 5.8rem;
   animation: flyIn 1s ease forwards;
-
 }
 
 .profileImg {
@@ -63,11 +62,9 @@ h5,
   height: 24rem;
 }
 
-
-
 .carousel-control-prev,
 .carousel-control-next {
-  margin: 12rem;
+  margin: 11rem;
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -122,7 +119,6 @@ h5,
   box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
 }
 
-
 .social-media {
   margin-top: 8rem;
 
@@ -137,18 +133,22 @@ h5,
 }
 
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 769px) {
 
   body {
     overflow-x: hidden;
   }
 
-  .navbar-nav.ml-auto .nav-item.dropdown {
+  .navbar-nav.ml-auto .nav-item2.dropdown {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .header {
+    margin-top: 3.5rem;
   }
 
   .aboutMeText {
@@ -173,30 +173,57 @@ h5,
   .skillsH2 {
     margin-top: -2rem;
   }
-    
-    .skills ul {
-      gap: 0.6rem;
-      margin-top: -1rem;
-    }
-    
-    .skills li {
-      width: 5rem;
-      height: 5rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      line-height: 5rem;
-    }
-    
-    .social-media .col-md-4 {
+
+  .skills ul {
+    gap: 0.6rem;
+    margin-top: -1rem;
+  }
+
+  .skills li {
+    width: 5rem;
+    height: 5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 5rem;
+  }
+
+  .social-media .col-md-4 {
     flex: 1;
   }
 
-    select.form-control option {
+  select.form-control option {
     font-size: 0.9rem;
   }
 
   .none {
-    display: none; 
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) {
+
+  .navbar-nav.ml-auto .nav-item2.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    font-size: 1.3rem;
+
+  }
+  
+  .navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: 5rem;
+  }
+
+  .header {
+    margin-top: 3.5rem;
   }
 
 }

@@ -31,10 +31,10 @@
   text-align: center;
 }
 
-header {
+.header {
   margin-bottom: 5rem;
   position: relative;
-  top: -6.25rem;
+  margin-top: 5.8rem;
   animation: flyIn 1s ease forwards;
 }
 
@@ -74,7 +74,7 @@ h5,
 
 .carousel-control-prev,
 .carousel-control-next {
-  margin: 12rem;
+  margin: 11rem;
 }
 .carousel-control-prev .carousel-control-prev-icon,
 .carousel-control-prev .carousel-control-next-icon,
@@ -140,15 +140,19 @@ h5,
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   body {
     overflow-x: hidden;
   }
-  .navbar-nav.ml-auto .nav-item.dropdown {
+  .navbar-nav.ml-auto .nav-item2.dropdown {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1rem;
+    font-size: 1.4rem;
+  }
+  .header {
+    margin-top: 3.5rem;
   }
   .aboutMeText {
     font-size: 1.2rem;
@@ -187,5 +191,25 @@ h5,
   }
   .none {
     display: none;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 990px) {
+  .navbar-nav.ml-auto .nav-item2.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    font-size: 1.3rem;
+  }
+  .navbar-nav .nav-item {
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin: 5rem;
+  }
+  .header {
+    margin-top: 3.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
