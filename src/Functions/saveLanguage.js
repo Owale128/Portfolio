@@ -1,13 +1,11 @@
 "use strict";
-// Object.defineProperty(exports, "__esModule", { value: true });
-// exports.getLanguage = exports.saveLanguage = void 0;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getLanguage = exports.saveLanguage = void 0;
 var saveLanguage = function (language) {
-    sessionStorage.setItem('language', language);
+    localStorage.setItem('language', language);
 };
-const _saveLanguage = saveLanguage;
-export { _saveLanguage as saveLanguage };
+exports.saveLanguage = saveLanguage;
 var getLanguage = function () {
-    return sessionStorage.getItem('language');
+    return localStorage.getItem('language');
 };
-const _getLanguage = getLanguage;
-export { _getLanguage as getLanguage };
+exports.getLanguage = getLanguage;
