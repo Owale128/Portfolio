@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+// Object.defineProperty(exports, "__esModule", { value: true });
 var saveLanguage_1 = require("../../Functions/saveLanguage");
 var swedishElements = document.querySelectorAll('.swedish');
 var englishElements = document.querySelectorAll('.english');
