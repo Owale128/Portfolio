@@ -1,12 +1,12 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var saveLanguage_1 = require("../../Functions/saveLanguage");
+// Object.defineProperty(exports, "__esModule", { value: true });
+import { saveLanguage, getLanguage } from "../../Functions/saveLanguage";
 var swedishElements = document.querySelectorAll('.swedish');
 var englishElements = document.querySelectorAll('.english');
 var languageSelect = document.getElementById('language-select');
 languageSelect.addEventListener('change', function () {
     var selectedLanguage = languageSelect.value;
-    (0, saveLanguage_1.saveLanguage)(selectedLanguage);
+    (0, saveLanguage)(selectedLanguage);
     updateLanguage(selectedLanguage);
 });
 var updateLanguage = function (language) {
@@ -28,7 +28,7 @@ var updateLanguage = function (language) {
     }
 };
 var activateSavedLanguage = function () {
-    var savedLanguage = (0, saveLanguage_1.getLanguage)();
+    var savedLanguage = (0, getLanguage)();
     if (savedLanguage) {
         updateLanguage(savedLanguage);
     }
