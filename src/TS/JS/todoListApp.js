@@ -1,6 +1,6 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-import { saveLanguage, getLanguage } from "../../Functions/saveLanguage";
+import { saveLanguage, getLanguage } from "../../Functions/saveLanguage.js";
 var swedishElements = document.querySelectorAll('.swedish');
 var englishElements = document.querySelectorAll('.english');
 var languageSelect = document.getElementById('language-select');
