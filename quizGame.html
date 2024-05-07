@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/sass/quizGame.css">
+    <title>Beskrivning av projektet</title>
+</head>
+<body>
+
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <select id="language-select" class="form-control none">
+            <option value="sv">Svenska</option>
+            <option value="en">Engelska</option>
+          </select>
+        </li>
+      </ul>
+
+
+    <div class="container description-container">
+    <img src="src/images/project-imgs/QuizGamePic.png" alt="A picture of quiz game" class="img">
+    <h2 class="swedish">Beskrivning av projektet</h2>
+    <h2 class="english none">Description of the project</h2>
+    <p class="swedish">Detta är en webbapplikation som låter användare spela en fråge-quiz. Den håller koll på frågor, användarens svar, poäng och visar resultat. Dessutom kan användare ange sitt namn innan de börjar spelet. Koden innehåller även funktioner för att starta om eller avsluta quizen och visar en lista över högsta poäng. Det finns också en modal som visar rätt svar efter att användaren har svarat på frågorna.</p>
+    <p class="english none">This is a web application that allows users to play a question quiz. It keeps track of questions, user answers, scores and displays results. Additionally, users can enter their name before starting the game. The code also includes functions to restart or exit the quiz and display a list of the highest scores. There is also a modal that displays the correct answer after the user answers the questions.</p>
+        <p>
+        <span class="txtTitle"><span class="swedish">Funktionalitet:</span><span class="english none">Functionality:</span><br></span>
+        <span class="swedish">Koden innehåller logik för att hantera frågor och svar, inklusive poängräkning. Dessutom kontrolleras användarnamnet innan quizen startar. Användaren har möjlighet att starta om quizet och avsluta det när som helst. Frågor hämtas från en källa och blandas för varje ny omgång. Resultatet av quizen skickas till ett API för ytterligare hantering. Dessutom finns det funktioner för att kontrollera och visa den högsta poängen samt för att visa modaler som visar de korrekta svaren.</span>
+        <span class="english none">The code contains logic for handling questions and answers, including scoring. In addition, the username is checked before the quiz starts. The user has the option to restart the quiz and end it at any time. Questions are drawn from a source and shuffled for each new round. The result of the quiz is sent to an API for further processing. Additionally, there are functions to check and display the highest score as well as to display modals showing the correct answers.</span>
+        <br>
+        <br>
+       <span class="txtTitle"><span class="swedish">Teknologier och verktyg</span>
+       <span class="english none">Technologies and tools</span></span>
+        <ul>
+          <li>HTML</li>
+          <li>MongoDB</li>
+          <li>SCSS/CSS</li>
+          <li>Nodejs/Expressjs</li>
+          <li>JavaScript/React</li>
+        </ul>
+    <a href="https://owalesquizgame.netlify.app/" alt="en länk till Pokemon sidan" class="swedish">Klicka här för att komma till Login sidan</a>
+    <a href="https://owalesquizgame.netlify.app/" alt="A link to the Pokemon site" class="english none">Click here to get to the Login site</a>
+</p>
+</div>
+    <script type="module" src="src/TS/quizGame.ts"></script>
+</body>
+</html>
