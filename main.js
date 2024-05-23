@@ -1,6 +1,6 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-import { saveLanguage, getLanguage } from "./src/Functions/saveLanguage";
+import { saveLanguage } from "./src/Functions/saveLanguage";
 var toggleLanguageSelect = document.getElementById('language-select');
 var swedishElements = document.querySelectorAll('.swedish');
 var englishElements = document.querySelectorAll('.english');
@@ -46,6 +46,6 @@ var activateSavedLanguage = function () {
         }
     }
 };
-window.onload = function () {
-    activateSavedLanguage();
-};
+// window.onload = function () {
+//     activateSavedLanguage();
+// };
