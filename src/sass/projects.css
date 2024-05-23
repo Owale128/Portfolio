@@ -24,6 +24,12 @@ p {
 
 .txtTitle {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+span {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -36,19 +42,11 @@ ul > li {
   margin-bottom: 1rem;
 }
 
-.none {
-  display: none;
-}
-
 a {
   font-size: 1.2rem;
 }
 a:hover {
   color: rgb(45, 100, 45);
-}
-
-.dropdown {
-  list-style: none;
 }
 
 @media screen and (max-width: 768px) {

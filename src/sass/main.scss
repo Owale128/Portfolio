@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -11,19 +12,13 @@
 
   .nav-item {
     font-size: 1.2rem;
-
-  }
-
-  .dropdownTxt {
-    color: white;
-    text-align: center;
   }
 }
 
 .header {
   margin-bottom: 5rem;
   position: relative;
-  margin-top: 5.8rem;
+  margin-top: 3.8rem;
   animation: flyIn 1s ease forwards;
 }
 
@@ -77,9 +72,7 @@ h5,
   }
 }
 
-.none {
-  display: none;
-}
+
 
 .appPage:hover {
   color: rgb(226, 65, 65);

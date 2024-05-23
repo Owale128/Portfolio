@@ -8,51 +8,36 @@
 </head>
 <body>
 
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <select id="language-select" class="form-control none">
-            <option value="sv">Svenska</option>
-            <option value="en">Engelska</option>
-          </select>
-        </li>
-      </ul>
-
-
     <div class="container description-container">
     <img src="src/images/project-imgs/WeatherAppPic.png" alt="A picture of Weather app" class="img">
-    <h2 class="swedish">Beskrivning av projektet</h2>
-    <h2 class="english none">Description of the project</h2>
-    <p class="swedish">Denna väderapp är byggd med Vue 3 och TypeScript. Den hämtar väderdata från OpenWeatherMap API baserat på en användarspecificerad stad och visar informationen. Appen använder ref och onMounted för att hantera reaktiva data. FetchWeather-funktionen anropas för att hämta väderdata och lagra den i ett reaktivt variabelt väder. WeatherForm-komponenten låter användaren ange en stad, och WeatherDisplay-komponenten visar stadens namn, temperatur och väderbeskrivning om det finns data. API-anrop hanteras av axios och fel loggas på misslyckade anrop.</p>
-    <p class="english none">This weather app is built with Vue 3 and TypeScript. It retrieves weather data from the OpenWeatherMap API based on a user-specified city and displays the information. The app uses ref and onMounted to manage reactive data. The fetchWeather function is called to retrieve the weather data and store it in a reactive variable weather. The WeatherForm component allows the user to enter a city, and the WeatherDisplay component displays the city's name, temperature, and weather description if data exists. API calls are handled by axios and errors are logged on failed calls.</p>
+    <h2>Beskrivning av projektet</h2>
+    <p>Denna väderapp är byggd med Vue 3 och TypeScript. Den hämtar väderdata från OpenWeatherMap API baserat på en användarspecificerad stad och visar informationen. Appen använder ref och onMounted för att hantera reaktiva data. FetchWeather-funktionen anropas för att hämta väderdata och lagra den i ett reaktivt variabelt väder. WeatherForm-komponenten låter användaren ange en stad, och WeatherDisplay-komponenten visar stadens namn, temperatur och väderbeskrivning om det finns data. API-anrop hanteras av axios och fel loggas på misslyckade anrop.</p>
         <p>
-        <span class="txtTitle"><span class="swedish">Formulär för att ange stad: </span>
-        <span class="english none">Form to enter the city:</span><br></span>  
-        <span class="swedish">I WeatherForm-komponenten finns ett formulär där användaren kan ange namnet på en stad. När användaren skickar in formuläret genom att trycka på knappen "Visa väder", aktiveras onSubmit-funktionen, som i sin tur skickar in en begäran om väderdata för den angivna staden genom att emittera en händelse (fetchWeather) med stadsnamnet.</span>
-        <span class="english none">In the WeatherForm component there is a form where the user can enter the name of a city. When the user submits the form by pressing the "Show Weather" button, the onSubmit function is fired, which in turn submits a request for weather data for the specified city by emitting an event (fetchWeather) with the city name.</span>
+        <span class="txtTitle">Formulär för att ange stad:</span>
         <br>
         <br>
-        <span class="txtTitle"><span class="swedish">Hämta väderdata:</span>
-        <span class="english none">fetch weather data:</span><br></span> 
-        <span class="swedish">När användaren skickar in stadsnamnet via formuläret eller när komponenten har monterats för första gången, anropas fetchWeather-funktionen. Denna funktion använder getWeather-funktionen för att hämta väderdata för den angivna staden från en extern API-tjänst. När svaret returneras, uppdateras weather-variabeln med den hämtade väderdatan.</span>
-<span class="english none">When the user submits the city name via the form or when the component is assembled for the first time, the fetchWeather function is called. This function uses the getWeather function to retrieve weather data for the specified city from an external API service. When the response is returned, the weather variable is updated with the fetched weather data.
-</span>
+        <span>I WeatherForm-komponenten finns ett formulär där användaren kan ange namnet på en stad. När användaren skickar in formuläret genom att trycka på knappen "Visa väder", aktiveras onSubmit-funktionen, som i sin tur skickar in en begäran om väderdata för den angivna staden genom att emittera en händelse (fetchWeather) med stadsnamnet.</span>
         <br>
         <br>
-        <span class="txtTitle"><span class="swedish">Visa väderinformation:</span><span class="english none">View weather information:</span><br></span>
-        <span class="swedish"> WeatherDisplay-komponenten visar väderinformationen för den stad som användaren har angett. Om väderdatan finns tillgänglig, visas stadens namn, temperatur och en beskrivning av väderförhållandena.</span>
-        <span class="english none">The WeatherDisplay component displays the weather information for the city specified by the user. If the weather data is available, the city name, temperature and a description of the weather conditions are displayed.
-        </span>
+        <span class="txtTitle">Hämta väderdata:</span>
         <br>
         <br>
-       <span class="txtTitle"><span class="swedish">Teknologier och verktyg</span>
-       <span class="english none">Technologies and tools</span></span>
+        <span>När användaren skickar in stadsnamnet via formuläret eller när komponenten har monterats för första gången, anropas fetchWeather-funktionen. Denna funktion använder getWeather-funktionen för att hämta väderdata för den angivna staden från en extern API-tjänst. När svaret returneras, uppdateras weather-variabeln med den hämtade väderdatan.</span>
+        <br>
+        <br>
+        <span class="txtTitle">Visa väderinformation:</span>
+        <br>
+        <br>
+        <span> WeatherDisplay-komponenten visar väderinformationen för den stad som användaren har angett. Om väderdatan finns tillgänglig, visas stadens namn, temperatur och en beskrivning av väderförhållandena.</span>
+        <br>
+        <br>
+       <span class="txtTitle">Teknologier och verktyg</span>
         <ul>
           <li>HTML</li>
           <li>SCSS/CSS</li>
           <li>JavaScript/Vue</li>
         </ul>
     <a href="https://checktheweathertoday.netlify.app/" alt="en länk till Weather app sidan" class="swedish">Klicka här för att komma till Weather app sidan</a>
-    <a href="https://checktheweathertoday.netlify.app/" alt="A link to the Weather app site" class="english none">Click here to get to the Weather app site</a>
 </p>
 </div>
     <script type="module" src="src/TS/JS/weatherApp.js"></script>
