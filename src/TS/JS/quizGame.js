@@ -27,12 +27,12 @@ var updateLanguage = function (language) {
         });
     }
 };
-var activateSavedLanguage = function () {
-    var savedLanguage = (0, getLanguage)();
-    if (savedLanguage) {
-        updateLanguage(savedLanguage);
-    }
-};
-window.onload = function () {
-    activateSavedLanguage();
-};
+// var activateSavedLanguage = function () {
+//     var savedLanguage = (0, getLanguage)();
+//     if (savedLanguage) {
+//         updateLanguage(savedLanguage);
+//     }
+// };
+// window.onload = function () {
+//     activateSavedLanguage();
+// };
