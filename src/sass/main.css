@@ -137,15 +137,21 @@ h5,
   body {
     overflow-x: hidden;
   }
-  .navbar-nav.ml-auto .nav-item2.dropdown {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
-    font-size: 1.4rem;
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .navbar-nav .navbar-nav .nav-item {
+    display: inline-block;
+    margin-right: 0;
+  }
+  .navbar-nav .navbar-nav .nav-item .navbar-collapse {
+    justify-content: center;
   }
   .header {
-    margin-top: 3.5rem;
+    margin: 3.5rem 0 1rem 0;
   }
   .aboutMeText {
     font-size: 1.2rem;
